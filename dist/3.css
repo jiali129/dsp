@@ -22,3 +22,25 @@ height: 40px;
     padding:0 10px;
     display: inline-block;
 }
+.content{
+    width: 100%;
+    clear: both;
+   
+}
+.dlss{
+   width: 100%;
+   display: flex;
+}
+.dls{
+    width: 270px;
+    display: flex;
+    background: #fff;
+    margin-left: 20px;
+    padding:5px 0;
+}
+.dls i{
+    color: pink;
+    padding:20px 15px;
+    vertical-align: middle;
+}
+

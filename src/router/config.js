@@ -1,30 +1,31 @@
-import Home from '../pages/home.jsx'
-import Plan from '../pages/plan.jsx'
-import Unit from '../pages/unit.jsx'
-import Idea from '../pages/idea.jsx'
+import React, { Component } from 'react'
+//import Home from '../pages/home.jsx'
+// import Plan from '../pages/plan.jsx'
+// import Unit from '../pages/unit.jsx'
+// import Idea from '../pages/idea.jsx'
 import Tools from '../pages/tools.jsx'
 import Account from '../pages/account.jsx'
 import Customer from '../pages/customer.jsx'
+import Loadable from './loadable'
 
 let router = {
     routes:[
         {
             path:'/',
-            component:Home,
+            component:Loadable('pages/home/home'),
             exact:true
         },
-        
         {
             path:'/plan',
-            component:Plan
+            component:Loadable('pages/plan/plan')
         },
         {
             path:'/unit',
-            component:Unit
+            component:Loadable('pages/unit/unit')
         },
         {
             path:'/idea',
-            component:Idea
+            component:Loadable('pages/idea/idea')
         },
         {
            path:'/tools',
@@ -37,7 +38,6 @@ let router = {
                {
                    path:'/tools/customer',
                    component:Customer
-
                }
            ]
         }
